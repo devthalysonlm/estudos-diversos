@@ -18,4 +18,8 @@ function incrementa(){  //Quando eu coloco o function na frente e depois o nome,
 
 
 incrementa() //Quando eu coloco o nome da função somente, eu estou invocando essa função. 
-console.log(valor) 
+console.log(valor)
+
+
+
+console.log('Olá,Mundo!')
