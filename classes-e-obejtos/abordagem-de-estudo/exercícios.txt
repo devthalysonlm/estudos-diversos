@@ -9,3 +9,9 @@ Crie um método anoPublicacao() que retorna uma string indicando se o livro foi 
 -------------------------------------------------------------------------------------------------------
 
 
+Exercício 2: Classe Pessoa com Herança
+Objetivo: Demonstrar o conceito de herança criando uma classe base e uma classe derivada.
+
+Defina a classe base Pessoa com atributos nome e idade, e um método apresentar() que retorna uma saudação.
+Defina uma classe derivada Funcionario que herda de Pessoa. Adicione um atributo cargo e um método informarCargo() que retorna uma mensagem com o cargo do funcionário.
+Crie instâncias de Funcionario e use os métodos da classe base e da classe derivada.
