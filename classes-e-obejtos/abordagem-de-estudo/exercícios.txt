@@ -15,3 +15,13 @@ Objetivo: Demonstrar o conceito de herança criando uma classe base e uma classe
 Defina a classe base Pessoa com atributos nome e idade, e um método apresentar() que retorna uma saudação.
 Defina uma classe derivada Funcionario que herda de Pessoa. Adicione um atributo cargo e um método informarCargo() que retorna uma mensagem com o cargo do funcionário.
 Crie instâncias de Funcionario e use os métodos da classe base e da classe derivada.
+
+-------------------------------------------------------------------------------------------------------
+
+Exercício 3: Classe Banco
+Objetivo: Criar uma classe que simula operações bancárias básicas.
+
+Defina a classe Banco com um atributo saldo e métodos para depositar() e sacar().
+Implemente o método depositar(valor) que adiciona o valor ao saldo.
+Implemente o método sacar(valor) que subtrai o valor do saldo, se houver saldo suficiente.
+Implemente um método mostrarSaldo() que retorna o saldo atual.
