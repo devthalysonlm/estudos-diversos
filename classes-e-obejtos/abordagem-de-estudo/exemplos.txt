@@ -1,0 +1,70 @@
+/*
+//Criando a classe e sua contrução
+
+class Animal {
+    constructor(especie, som){
+        this.especie = especie
+        this.som = som
+    }
+    //Criando um método que pode ser chamado a qualquer momento com base na classe
+    emitirSom(){
+        return `${this.especie} emiti ${this.som}`
+    }
+}
+
+//Crindo um obejto criado com base no planejamento da classe
+let animal1 = new Animal('Leao','Rugido')
+let animal2 = new Animal('Gato','Miado')
+let animal3 = new Animal('Cachorro','Latido')
+
+//Printando na tela o obejto mediante o método pré pronto
+//Lembrando que ao printar o o resulto primeiro devemos colocar o objeto depois o método
+console.log(animal3.emitirSom())
+
+
+
+//Criando a classe
+class Pessoa{
+    constructor(nome,idade){
+        this.nome = nome //Atributo
+        this.idade = idade //Atributo
+    }
+    //Metodo
+    saudacao(){
+        return `Olá, me chamo ${this.nome} e tenho ${this.idade} anos!`
+    }
+}
+
+
+//Criando Objeto apresentado na classe
+//pessoa1 e pessoa2 são instâncias da classe Pessoa
+
+let pessoa1 = new Pessoa('Nina', 4)
+let pessoa2 = new Pessoa('Tobias', 3)
+
+//Utilizando metodo do obejto 
+console.log(pessoa2.saudacao())
+
+*/
+
+class Carro{
+    constructor(modelo,cor,ano){
+        this.modelo = modelo
+        this.cor = cor
+        this.ano = ano
+    }
+
+    apresentar(){
+        return `Modelo: ${this.modelo}\nCor: ${this.cor}\nAno: ${this.ano}.`
+    }
+
+    acelerar(){
+        return `O ${this.modelo} está acelerando.`
+    }
+
+}
+
+let carro1  = new Carro('Posche Carrera', 'Cimento Queimado',  2023)
+
+
+console.log(`${carro1.apresentar()}\n${carro1.acelerar()}`)

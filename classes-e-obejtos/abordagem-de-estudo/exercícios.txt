@@ -1,0 +1,11 @@
+Exercício 1: Classe Livro
+Objetivo: Criar uma classe Livro com atributos e métodos básicos.
+
+Defina a classe Livro com os seguintes atributos: titulo, autor, e ano.
+Crie um método informacoes() que retorna uma string com o título, o autor e o ano do livro.
+Crie um método anoPublicacao() que retorna uma string indicando se o livro foi publicado este ano.
+
+
+-------------------------------------------------------------------------------------------------------
+
+
