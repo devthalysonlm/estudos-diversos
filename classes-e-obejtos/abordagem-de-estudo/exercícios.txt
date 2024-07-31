@@ -25,3 +25,32 @@ Defina a classe Banco com um atributo saldo e métodos para depositar() e sacar(
 Implemente o método depositar(valor) que adiciona o valor ao saldo.
 Implemente o método sacar(valor) que subtrai o valor do saldo, se houver saldo suficiente.
 Implemente um método mostrarSaldo() que retorna o saldo atual.
+
+Exercício 4: Criar e Manipular Objetos
+
+Crie uma classe Pessoa com os atributos nome e idade.
+Adicione um método chamado cumprimentar que imprime "Olá, meu nome é [nome] e eu tenho [idade] anos."
+Crie um objeto da classe Pessoa e inicialize com valores específicos.
+Chame o método cumprimentar e então altere o nome e idade do objeto.
+Chame o método novamente para verificar a alteração.
+
+--------------------------------------------------------------------------------------------------------
+
+Exercício 5: Manipulação Avançada
+
+Crie uma classe Livro com atributos titulo, autor, e anoPublicacao.
+Adicione um método chamado resumo que imprime "Título: [titulo], Autor: [autor], Ano de Publicação: [anoPublicacao]."
+Crie dois objetos da classe Livro com diferentes valores.
+Chame o método resumo para ambos os objetos.
+Adicione um método chamado atualizarAno que altera o ano de publicação do livro.
+Use o método atualizarAno em um dos objetos e chame o método resumo novamente para verificar a alteração.
+
+-------------------------------------------------------------------------------------------------------
+Exercício 6: Métodos com Parâmetros
+
+Crie uma classe Calculadora com métodos para somar e multiplicar dois números.
+Adicione métodos chamados somar e multiplicar que aceitam dois parâmetros e retornam o resultado da operação.
+Crie um objeto da classe Calculadora.
+Chame os métodos somar e multiplicar com diferentes valores e imprima os resultados.
+
+----------------------------------------------------------------------------------------------------------
