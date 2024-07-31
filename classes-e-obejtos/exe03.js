@@ -16,8 +16,8 @@ class Banco{
 
 
     sacar(valor){
-        if(this.saldo >= valor){
-            return `Valor sacado R$${valor - this.saldo  }`
+        if(valor > 0 && valor <= this.saldo){
+            return `Valor sacado R$${this.saldo -= valor }`
         }
         
     }
@@ -30,8 +30,10 @@ class Banco{
 
 
 let contaCorrente = new Banco()
-console.log(contaCorrente.depositar(150))
-console.log(contaCorrente.sacar(50))
 
-//Atualizção de Saldo fixa:
+contaCorrente.depositar(500)
+console.log(contaCorrente.mostrarSaldo())
+
+contaCorrente.sacar(100)
+
 console.log(contaCorrente.mostrarSaldo())
