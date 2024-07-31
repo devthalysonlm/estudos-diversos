@@ -54,3 +54,85 @@ Crie um objeto da classe Calculadora.
 Chame os métodos somar e multiplicar com diferentes valores e imprima os resultados.
 
 ----------------------------------------------------------------------------------------------------------
+
+EXERCÍCIOS QUE ABORDA ABRANGE TODA A ABORAGEM DE ESTUDOS
+
+Exercício 7: Definição e Criação de Classes
+Objetivo: Criar uma classe Produto com atributos e métodos básicos.
+
+Defina uma classe Produto com os seguintes atributos:
+
+nome (string)
+preço (número)
+quantidade (número)
+Adicione um método descricao que retorne uma string descrevendo o produto, incluindo o nome, preço e quantidade.
+
+Adicione um método atualizarPreco que permita atualizar o preço do produto.
+
+Crie um objeto da classe Produto e teste os métodos.
+
+----------------------------------------------------------------------------------------------------------
+
+Exercício 8: Manipulação de Objetos
+Objetivo: Criar uma classe ContaBancaria e manipular objetos.
+
+Defina uma classe ContaBancaria com os seguintes atributos:
+
+titular (string)
+saldo (número)
+Adicione um método depositar que permita adicionar um valor ao saldo da conta.
+
+Adicione um método sacar que permita retirar um valor do saldo da conta, desde que haja saldo suficiente.
+
+Adicione um método mostrarSaldo que retorne o saldo atual da conta.
+
+Crie um objeto da classe ContaBancaria e teste os métodos.
+
+---------------------------------------------------------------------------------------------------------
+
+Exercício 9: Adicionando Funcionalidade
+Objetivo: Estender a funcionalidade da classe Veiculo.
+
+Defina uma classe Veiculo com os seguintes atributos:
+
+marca (string)
+modelo (string)
+ano (número)
+Adicione um método info que retorne uma string com as informações do veículo.
+
+Crie uma subclasse Carro que herda de Veiculo e adicione um atributo portas (número).
+
+Adicione um método infoCarro na subclasse que retorna as informações do carro, incluindo o número de portas.
+
+Crie objetos das classes Veiculo e Carro e teste os métodos.
+
+--------------------------------------------------------------------------------------------------------------
+
+Exercício 10: Manipulação Avançada de Objetos
+Objetivo: Criar uma classe Aluno e manipular objetos para gerenciar notas.
+
+Defina uma classe Aluno com os seguintes atributos:
+
+nome (string)
+notas (array de números)
+Adicione um método adicionarNota que permite adicionar uma nota ao array de notas.
+
+Adicione um método calcularMedia que retorna a média das notas.
+
+Crie um objeto da classe Aluno, adicione algumas notas e calcule a média.
+
+--------------------------------------------------------------------------------------------------------------
+
+Exercício 11: Criando e Usando Métodos Estáticos
+Objetivo: Criar uma classe Matematica com métodos estáticos.
+
+Defina uma classe Matematica com métodos estáticos para calcular:
+
+Soma de dois números.
+Multiplicação de dois números.
+Fatorial de um número (utilize um método auxiliar, se necessário).
+Teste os métodos estáticos chamando-os diretamente na classe sem criar um objeto.
+
+----------------------------------------------------------------------------------------------------------------
+
+
