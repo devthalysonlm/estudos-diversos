@@ -2,10 +2,10 @@
 
 //Criação da classe base
  class Produto{
-    constructor(nome,preco,quantidae){
+    constructor(nome,preco,quantidade){
         this.nome = nome //Atributo string
-        this.preco = 0 //Atributo número
-        this.quantidade = 0 //Atributo número
+        this.preco = preco //Atributo número
+        this.quantidade = quantidade //Atributo número
     }
 
     //Método
@@ -18,11 +18,13 @@
     }
 
 }
-
-let maça = new Produto('Maça',1,5)
-maça.atualizarPreco(`R$${1},00`)
-
-
+//Criando o Objeto da classe produto
+let maça = new Produto('Maça',1.50,5)
+//Chamando o método descrição
+console.log(maça.descricao())
+//Atualializando o preço do produto
+maça.atualizarPreco(`R$${10},00`)
+//Chamando a descrição com o preço atualizado.
 console.log(maça.descricao())
 
 
