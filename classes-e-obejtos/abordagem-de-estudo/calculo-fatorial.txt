@@ -1,0 +1,12 @@
+function factorialize(num) {
+  // Se o número for inferior a 0, rejeite-o.
+  if (num < 0) 
+        return -1;
+    
+  // Se o número for 0, seu fatorial é 1.
+  else if (num == 0) 
+      return 1;
+    
+  // Caso contrário, chame o procedimento de recursão novamente
+    else {
+        return (num * factorialize(num - 1));
