@@ -16,10 +16,14 @@ class Carro extends Veiculo{
     constructor(marca,modelo,ano,portas=0){
         super(marca,modelo,ano)
         this.portas = portas
+        
+    }
+    infoAtualizadas(){
+        return `${this.informacoes()}\nPortas: ${this.portas}`
     }
 }
 
 
-let carro1 = new Veiculo('Posche','911 Carrera GTS', 2023)
+let carro1 = new Carro('Porsche','911 Carrera GTS', 2023, 2)
 
-console.log(carro1.informacoes())
+console.log(carro1.infoAtualizadas())
