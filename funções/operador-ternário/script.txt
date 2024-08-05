@@ -1,0 +1,40 @@
+Operador ternário em JavaScript, é uma maneira concisa de escrever uma instrução if-else. Vamos analisá-la:
+
+let resultado = (n1 % 2 === 0) ? 'Número Par' : 'Número Impar';
+
+
+
+Claro! A expressão que você mencionou é um operador ternário em JavaScript, que é uma maneira concisa de escrever uma instrução if-else. Vamos analisá-la:
+
+javascript
+Copiar código
+let resultado = (n1 % 2 === 0) ? 'Número Par' : 'Número Impar';
+Componentes da Expressão
+Condição: (n1 % 2 === 0)
+
+Esta parte verifica se o número n1 é par.
+O operador % (módulo) calcula o resto da divisão de n1 por 2.
+Se n1 % 2 for igual a 0, significa que n1 é divisível por 2, ou seja, é um número par.
+Operador Ternário ? ::
+
+O operador ternário é uma forma abreviada de escrever if-else.
+A sintaxe básica é: condição ? valor_se_verdadeiro : valor_se_falso.
+Resultado Verdadeiro: 'Número Par'
+
+Se a condição (n1 % 2 === 0) for verdadeira, a expressão retorna a string 'Número Par'.
+Resultado Falso: 'Número Impar'
+
+Se a condição for falsa (ou seja, n1 % 2 não é igual a 0), a expressão retorna a string 'Número Impar'.
+Como Funciona
+Quando a linha é executada, o JavaScript avalia a condição (n1 % 2 === 0):
+
+Se for verdadeira: A variável resultado recebe o valor 'Número Par'.
+Se for falsa: A variável resultado recebe o valor 'Número Impar'.
+Exemplo
+Vamos ver como isso funciona com alguns valores:
+
+let resultado1 = (2 % 2 === 0) ? 'Número Par' : 'Número Impar';
+// 2 % 2 é igual a 0, então resultado1 será 'Número Par'
+
+let resultado2 = (3 % 2 === 0) ? 'Número Par' : 'Número Impar';
+// 3 % 2 é igual a 1, então resultado2 será 'Número Impar'
