@@ -1,0 +1,20 @@
+Exercício 1: Calculando a Diferença
+Crie uma função chamada subtrair que recebe dois números como parâmetros, calcula a diferença entre o primeiro e o segundo número, armazena o resultado em uma variável intermediária e retorna essa diferença.
+-----------------------------------------------------------------
+Exercício 2: Calculando a Divisão
+Crie uma função chamada dividir que recebe dois números como parâmetros, calcula a divisão do primeiro número pelo segundo, armazena o resultado em uma variável intermediária e retorna esse resultado. Certifique-se de lidar com a divisão por zero.
+-----------------------------------------------------------------
+Exercício 3: Calculando a Potência
+Crie uma função chamada potencia que recebe dois números como parâmetros: a base e o expoente. Calcule a base elevada ao expoente, armazene o resultado em uma variável intermediária e retorne esse resultado.
+-----------------------------------------------------------------
+Exercício 4: Calculando a Média
+Crie uma função chamada media que recebe três números como parâmetros, calcula a média aritmética desses números, armazena a média em uma variável intermediária e retorna essa média.
+-----------------------------------------------------------------
+Exercício 5: Calculando o Perímetro de um Retângulo
+Crie uma função chamada perimetroRetangulo que recebe a largura e a altura de um retângulo como parâmetros, calcula o perímetro, armazena o resultado em uma variável intermediária e retorna esse perímetro.
+-----------------------------------------------------------------
+Exercício 6: Calculando o Volume de um Cubo
+Crie uma função chamada volumeCubo que recebe a aresta do cubo como parâmetro, calcula o volume do cubo (aresta³), armazena o resultado em uma variável intermediária e retorna esse volume.
+-----------------------------------------------------------------
+Exercício 7: Verificando se um Número é Par ou Ímpar
+Crie uma função chamada parOuImpar que recebe um número como parâmetro, verifica se o número é par ou ímpar, armazena o resultado em uma variável intermediária e retorna uma string indicando "Par" ou "Ímpar".
