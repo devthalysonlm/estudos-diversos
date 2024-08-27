@@ -1,5 +1,4 @@
-function nome (n){
-    return `Olá,${n}`
-}
 
-console.log(nome('Thalyson'))
+
+
+console.log('Olá,Mundo!')
