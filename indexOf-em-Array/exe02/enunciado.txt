@@ -1,9 +1,0 @@
-Exercício 2: Contar Ocorrências
-Objetivo: Crie uma função que conte quantas vezes um elemento aparece em um array.
-
-Descrição:
-
-Crie uma função chamada contarOcorrencias que aceita dois parâmetros:
-Um array de números (numeros).
-Um número específico (numeroProcurado).
-A função deve retornar o número de vezes que numeroProcurado aparece no array numeros.
