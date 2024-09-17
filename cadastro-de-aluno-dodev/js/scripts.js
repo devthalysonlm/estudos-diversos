@@ -2,10 +2,12 @@
 ////////////////// FAÇA O SEU CÓDIGO AQUI \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////////////////////////////////////////////////////
 
-class Aluno{
+//Definindo uma classe Aluno:
+class Aluno { //Nesse ponto as propriedades ainda não foram inicializadas elas so existem.
   Nome
   Idade
   Nota
+  //Construtor da classe
   constructor(nome,idade,nota){
     this.Nome = nome
     this.Idade = idade
@@ -13,58 +15,20 @@ class Aluno{
   }
 }
 
-// Array
+//Criando um array de Alunos para armazenar cada aluno cadastrado
 let arrayAlunos = []
 
-//funções projeto
-
-function CadastrarAluno(nome,idade,nota,array){
-  let objetoAluno = new Aluno(nome,idade,nota)
-  if(!array.some(x => x.Nome == nome))
+function CadastrarAluno(nome,idade,nota, array){ //Função responsável por cadastrar novos alunos
+  let objetoAluno = new Aluno(nome,idade,nota) //Criando um novo objeto usando nome, idade e afins como argumento, o novo objeto pe armazenado na variável aluno.
+  if(!array.some(x => x.Nome == nome)){ //O método array.some(x => x.Nome == nome) percorre o array para verificar se já existe um aluno com o mesmo nome. A função some retorna true se encontrar algum elemento com a mesma propriedade Nome. Se nenhum aluno for encontrado, ela retorna false.
     array.push(objetoAluno)
-  return objetoAluno
-}
-
-function OrdenarPorNota(array) {
-  array.sort((a, b) => a.Nota - b.Nota)
-  return array
-}
-
-function OrdenarPorIdade() {
-  array.sort((a, b) => b.Idade - a.Idade)
-  return array
-}
-
-function OrdenarPorNome(array) {
-  array.sort((a, b) => {
-    const nomeA = a.Nome.toUpperCase();
-    const nomeB = b.Nome.toUpperCase();
-
-    if (nomeA < nomeB){
-      return -1;
-    }
-    if (nomeA > nomeB){
-      return 1;
-    }
-    return 0;
-  });
-  return array
-}
-
-function CalcularMedia(array){
-  if(array.length === 0) {
-    return 0;
   }
-  let somaNotas = 0;
-
-  array.forEach((aluno) => {
-    somaNotas += Number(aluno.nota)
-  })
-
-  const media = somaNotas / array.length;
-  return media;
+  return objetoAluno
 
 }
+
+
+
 
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
