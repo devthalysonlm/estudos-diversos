@@ -2,31 +2,9 @@
 ////////////////// FAÇA O SEU CÓDIGO AQUI \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////////////////////////////////////////////////////
 
-//Definindo uma classe Aluno:
-class Aluno { //Nesse ponto as propriedades ainda não foram inicializadas elas so existem.
-  Nome
-  Idade
-  Nota
-  //Construtor da classe
-  constructor(nome,idade,nota){
-    this.Nome = nome
-    this.Idade = idade
-    this.Nota = nota
-  }
+class Aluno{
+  
 }
-
-//Criando um array de Alunos para armazenar cada aluno cadastrado
-let arrayAlunos = []
-
-function CadastrarAluno(nome,idade,nota, array){ //Função responsável por cadastrar novos alunos
-  let objetoAluno = new Aluno(nome,idade,nota) //Criando um novo objeto usando nome, idade e afins como argumento, o novo objeto pe armazenado na variável aluno.
-  if(!array.some(x => x.Nome == nome)){ //O método array.some(x => x.Nome == nome) percorre o array para verificar se já existe um aluno com o mesmo nome. A função some retorna true se encontrar algum elemento com a mesma propriedade Nome. Se nenhum aluno for encontrado, ela retorna false.
-    array.push(objetoAluno)
-  }
-  return objetoAluno
-
-}
-
 
 
 
