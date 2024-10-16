@@ -20,7 +20,23 @@ function OrdenarPorIdade(array){
   return array
 }
 
+function OrdenarPorNome(array){
+  array.sort((a, b) => {
+    const nomeA = a.Nome.toUpperCase()
+    const nomeB = b.Nome.toUpperCase()
+
+    if(nomeA < nomeB){
+      return -1
+    }
+    if(nomeA > nomeB){
+      return 1
+    }
+    return 0 
+  })
+  return array
+}
 
 
 console.log(OrdenarPorNota(arrayColaboradores))
 console.log(OrdenarPorIdade(arrayColaboradores))
+console.log(OrdenarPorNome(arrayColaboradores))
