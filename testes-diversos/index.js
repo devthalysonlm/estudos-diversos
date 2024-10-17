@@ -21,7 +21,7 @@ function OrdenarPorIdade(array){
 }
 
 function OrdenarPorNome(array){
-  array.sort((a, b) => {
+  array.sort((a,b) => {
     const nomeA = a.Nome.toUpperCase()
     const nomeB = b.Nome.toUpperCase()
 
@@ -35,27 +35,15 @@ function OrdenarPorNome(array){
   })
   return array
 }
-
-function CalcularMedia(array){
-  if(array.length === 0){
-    return 0
-  }
-
-  let somaNotas = 0
-
-  array.forEach((aluno) => {
-
-    somaNotas += Number(aluno.Nota)
-
-  })
-
-  let media = somaNotas / array.length
-  return media
-    
   
-}
 
+
+
+
+console.log('Ordenando Por Nota')
 console.log(OrdenarPorNota(arrayColaboradores))
+console.log('Ordenando Por Idade')
 console.log(OrdenarPorIdade(arrayColaboradores))
+console.log('Ordenar Por Nome')
 console.log(OrdenarPorNome(arrayColaboradores))
-console.log(CalcularMedia(arrayColaboradores))
+
