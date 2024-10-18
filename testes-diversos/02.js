@@ -1,4 +1,7 @@
 
+"use strict";
+
+
 //Criando um array de objetos
 let nomes = [
     {Nome:'Nina', Idade: 4, Nota: 10},
@@ -32,9 +35,30 @@ function OrdenarPorIdade(array){
     return array
 }
 
+function OrdenarPorNota(array){
+    array.sort((a, b) => a.Nota - b.Nota)
+    return array
+}
+
+function CalcularMedia(array){
+    if(array.length === 0){
+        return 0
+    }
+
+    let somaNotas = 0
+
+    array.forEach((alunos) => {
+        somaNotas += Number(alunos.Nota)
+    })
+
+    const media = somaNotas / array.length
+    return media
+}
 
 
 
 
 console.log(OrdenarPorNome(nomes))
 console.log(OrdenarPorIdade(nomes))
+console.log(OrdenarPorNota(nomes))
+console.log(CalcularMedia(nomes))
