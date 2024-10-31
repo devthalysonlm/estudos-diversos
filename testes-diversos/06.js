@@ -13,7 +13,7 @@ class Hoteis{
 }
 
 let hoteis = []
-let idHoteis = []
+let idHoteis = 1
 
 function CadastrarHotel(){
     let nome;
@@ -46,8 +46,15 @@ function CadastrarHotel(){
             console.log(`Como nenhuma classe foi selecionada, cadastraremos a classe padrão ${classe}`)
             break
     }
+
+    let numero = prompt('Informe o número de telfone:')
+
+    let hotel = new Hoteis(nome, classe, numero)
+    idHoteis++
+    hoteis.push(hotel)
 }
 
 
 
 CadastrarHotel()
+console. log(hoteis)
