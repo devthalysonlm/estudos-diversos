@@ -1,6 +1,4 @@
 
-
-
 console.log('BEM VINDOS AO HOTEL DODEV')
 
 class Hoteis{
