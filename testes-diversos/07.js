@@ -18,6 +18,21 @@ class Hoteis{
     }
 }
 
+class Reservas{
+    Id
+    IdHotel
+    Responsavel
+    Entrada
+    Saida
+    constructor(id, idHotel, responsavel, entrada, saida){
+        this.Id = id
+        this.IdHotel = idHotel
+        this.Responsavel = responsavel
+        this.Entrada = entrada
+        this.Saida = Saida
+    }
+}
+
 let hoteis = []
 let idhotel = []   
 
@@ -71,7 +86,22 @@ function CadastrarHotel(){
     hoteis.push(hotel)
 }
 
-CadastrarHotel()
-console.log(hoteis)
 
+function CadastrarReserva(){
+    let idHotel;
+    let existe = false;
+
+    do {
+        idHotel = paseInt(prompt('Informe o ID do hotel:'))
+
+        for(let i = 0; i < hoteis.length; i++){
+            if(idHotel === hoteis[i].Id){
+                existe = true;
+                break;
+            } else if (i === hoteis.length -1){
+                console.log('ID do Hotel não cadastrado!')
+            }
+        }
+    } while (!existe);
+}
 
