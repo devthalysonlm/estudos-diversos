@@ -66,37 +66,35 @@ function CadastrarHotel(){
     hoteis.push(hotel)
 }
 
-
 function CadastrarReserva(){
     let idHotel;
     let existe = false;
 
     do {
-        idHotel = prompt('Informe o ID do Hotel:')
-        for(let i = 0; i < hoteis.length; i++){
+        idHotel = parseInt(prompt('Informe o ID do Hotel:'))
+        for(i = 0; i < hoteis.length; i++){
             if(idHotel === hoteis[i].Id){
                 existe = true;
                 break;
             } else if(i === hoteis.length -1){
-                console.log('ID do Hotel não cadastrado.')
+                console.log('ID  do Hotel não cadastrado!')
             }
         }
-        
     } while (!existe);
 
-    let responsavel = prompt('Informe o nome')
-    let entrada;
+    let responsavel = prompt('informe o nome do responsável:')
+    let entrada = parseInt(prompt('Informe o dia de entrada:'))
+    let saida;
     do {
-        entrada = prompt('Informe o dia de entrada:')
-        if(entrada > saida){
-            console.log('O dia da entrada não pode ser maior que o dia da saída.')
+        saida = parseInt(prompt('Informe o dia de saída:'))
+        if(saida < entrada){
+            console.log('A saída não pode ser antes da entrada!')
         }
     } while (saida < entrada);
-    let saida = prompt('Iforme o dia dew ')
+
+    let reserva = new Reservas(idReserva, idHotel, responsavel, entrada, saida)
+    idReserva++
+    reservas.push(reserva)
 }
 
 
-
-CadastrarHotel()
-CadastrarReserva()
-console.log(hoteis)
