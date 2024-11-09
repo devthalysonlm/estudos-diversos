@@ -68,6 +68,39 @@ function CadastrarHotel(){
 }
 
 
+function CadastrarReserva(){
+    let idHotel;
+    let existe = false
+
+    do {
+        idHotel = parseInt(prompt('Informe o ID do hotel:'))
+        for(let i = 0; i < hoteis.length; i++){
+            if(idHotel === hoteis[i].Id){
+                existe = true;
+                break
+            } else if(i === hoteis.length -1){
+                alert('ID do Hotel não cadastrado!')
+            }
+        }
+    } while (!existe);
+
+    let responsavel = prompt('Informe o nome do responsável pela reserva:')
+    let diaEntrada = parseInt(prompt('Informe o dia de entrada:'))
+    let diaSaida;
+
+    do {
+         diaSaida = parseInt(prompt('informe o dia de saída:'))
+         if(diaSaida < diaEntrada){
+            alert('O dia de saída não pode ser menor que o dia de entrada!')
+         } 
+    } while (diaSaida < diaEntrada);
+
+    let reserva = new Reservas(idReserva, idHotel, responsavel, diaEntrada, diaSaida)
+    idReserva++
+    reservas.push(reserva)
+
+}
+
 
 
 
