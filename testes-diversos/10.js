@@ -102,6 +102,17 @@ function CadastrarReserva(){
     reservas.push(reserva)
 }
 
+function ProcurarReservasPeloHotel(idHotel){
+    reservas.forEach(reserva => {
+        if(idHotel == reserva.idHotel){
+            let i = idHotel - 1
+            console.log(`Hotel: ${hoteis[i].Nome}`)
+            console.log(`Responsável: ${reserva.Responsavel}`)
+            console.log(`Check-in: ${reserva.DiaEntrada}`)
+            console.log(`Check-out: ${reserva.DiaSaida}`)
+            }
+    })
+}
 
 let continuar = true
 
