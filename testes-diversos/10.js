@@ -65,4 +65,61 @@ function CadastrarHotel(){
     let endereco = prompt('Informe o endereço:')
     let telefone = prompt('Informe o telefone:')
 
+    let hotel = new Hoteis(idHotel, nome, categoria, endereco, telefone)
+    idHotel++
+    hoteis.push(hotel)
+
+}
+
+//CRIANDO FUNÇÃO DE CADASTRAR RESERVA
+function CadastrarReserva(){
+    let idHotel;
+    let existe = false
+    do {
+        idHotel = parseInt(prompt('Informe o ID do hotel:'))
+        for(let i = 0; i < hoteis.length; i++){
+            if(idHotel === hoteis[i].Id){
+                existe = true
+                break;
+            } else if(i === hoteis.length -1){
+                alert('ID do hotel não cadastrado!')
+            }
+        }
+    } while (!existe);
+
+    let responsavel = prompt('Informe o nome do responsável pela reserva:')
+    let diaEntrada = parseInt(prompt('Informe o dia de check-in:'))
+    let diaSaida;
+    do {
+        diaSaida = parseInt(prompt('Informe o dia de check-out:'))
+        if(diaSaida < diaEntrada){
+            alert('[ERRO!]O check-in deve ser antes do check-out!')
+        }
+    } while (diaSaida < diaEntrada);
+
+    let reserva = new Reservas(idReserva, idHotel, responsavel, diaEntrada, diaSaida)
+    idReserva++
+    reservas.push(reserva)
+}
+
+
+let continuar = true
+
+while(continuar){
+    let opcao = prompt('Digite 1 para cadastro de hotel\nDigite 2 para cadastro de reserva\nDigite 3 para encerrar o programa')
+    switch(opcao){
+        case'1':
+            CadastrarHotel();
+            console.log(hoteis)
+            break;
+        case'2':
+            CadastrarReserva();
+            console.log(reservas)
+        case'3':
+            continuar = false
+            alert('Programa encerrado.')
+            break
+        default:
+            alert('[ERRO!]Opção inválida!')
+    }
 }
