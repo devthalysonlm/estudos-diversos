@@ -102,22 +102,23 @@ function CadastrarReserva(){
     reservas.push(reserva)
 }
 
-function ProcurarReservasPeloHotel(idHotel){
+function ProcurarReservaPeloHotel(idHotel){
     reservas.forEach(reserva => {
-        if(idHotel == reserva.idHotel){
+        //Para cada reserva que encontrarmos a função executa o código dentro do bloco {...} chamando cada item de reserva, poderia ser x ou y tambem tanto faz.
+        if(idHotel == reserva.IdHotel){
             let i = idHotel - 1
             console.log(`Hotel: ${hoteis[i].Nome}`)
-            console.log(`Responsável: ${reserva.Responsavel}`)
-            console.log(`Check-in: ${reserva.DiaEntrada}`)
-            console.log(`Check-out: ${reserva.DiaSaida}`)
-            }
+            console.log(`Responsavel:${reserva.responsavel}`)
+            console.log(`Check-n: ${reserva.diaEntrada}`)
+            console.log(`Check-out: ${reserva.diaSaida}`)
+        }
     })
 }
 
 let continuar = true
 
 while(continuar){
-    let opcao = prompt('Digite 1 para cadastro de hotel\nDigite 2 para cadastro de reserva\nDigite 3 para encerrar o programa')
+    let opcao = prompt('Digite 1 para cadastro de hotel\nDigite 2 para cadastro de reserva\nDigite 3 para encerrar o programa\nInforme 4 para consultar reserva pelo hotel.')
     switch(opcao){
         case'1':
             CadastrarHotel();
@@ -130,6 +131,8 @@ while(continuar){
             continuar = false
             alert('Programa encerrado.')
             break
+        case '4':
+            ProcurarReservaPeloHotel(prompt('Digite o ID do hotel:'))
         default:
             alert('[ERRO!]Opção inválida!')
     }
