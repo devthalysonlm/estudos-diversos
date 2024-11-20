@@ -124,6 +124,12 @@ function CadastrarReserva(){
     reservas.push(reserva)
 }
 
+function ProcurarReservaPeloHotel(idHotel){
+    reservas.forEach(reserva => {
+        if()
+    })
+}
+
 
 let continuar = true
 while(continuar){
@@ -146,6 +152,8 @@ while(continuar){
     }
 
 }
+
+
 
 
 
