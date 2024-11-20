@@ -82,6 +82,8 @@ function CadastrarHotel(){
 }
 
 function CadastrarReserva(){
+    //Primeira parte da função de cadastrar reserva
+    //Deixamos a variaval idHotel em standBy para ser usada posteriormente.
     let idHotel;
     let existe = false
     do {
@@ -90,7 +92,7 @@ function CadastrarReserva(){
         //contagem que vai fazer uma interação com cada elemente do array de hoteis
         for(let i = 0; i < hoteis.length; i++){
             //Se por acado a contagem for igual a algum elemeente de ID do array hoteis o hotel existe
-            if(idHotel === hoteis[i].id){
+            if(parseInt(idHotel) === hoteis[i].id){
                 existe = true
                 //Se o Hotel existe a minha contagem para com o break;
                 break;
@@ -101,9 +103,56 @@ function CadastrarReserva(){
         }
 
     } while (!existe);
+
+    //Segunda parte da função CadastrarReserva
+    //Solcita as informações necessário como responsável pela reserva e dia de entrada e deixa o dia de saida como standBy
+    let responsavel = prompt('Informe o nome do responável pela reserva:')
+    let diaEntrada = parseInt(prompt('Informe o dia de Check-in'))
+    let diaSaida;
+    //Cria um dowhile em que a condição para sair desse loop é que o dia de entrada não deve ser maior que o dia de saida. 
+    do {
+        diaSaida = parseInt(prompt('informe o dia de Check-out:'))
+        if(diaSaida < diaEntrada){
+            alert('O dia de Check-in não pode ser maior do que o Check-out!')
+        }
+    } while (diaSaida < diaEntrada);
+    //Cria o objeto da novareserva
+    let reserva = new Reservas(idReserva, idHotel, responsavel, diaEntrada, diaSaida)
+    //Atribui o id da reserva
+    idReserva++
+    //Puxa a nova reserva para o array de reservas
+    reservas.push(reserva)
+}
+
+
+let continuar = true
+while(continuar){
+    let opçoes = parseInt(prompt('Digite 1 para cadastro de hotel ou 2 para cadastro de reservas 3 sair.'))
+    switch (opçoes) {
+        case 1:
+            CadastrarHotel();
+            console.log(hoteis)
+            break;
+        case 2:
+            CadastrarReserva();
+            console.log(reservas)
+            break;
+        case 3:
+            continuar = false
+            break;
+        default:
+            console.log('ERRO!')
+            break;
+    }
+
 }
 
 
 
+
+
+
+
 //CadastrarHotel();
+
 //console.log(hoteis)
