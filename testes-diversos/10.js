@@ -105,7 +105,7 @@ function CadastrarReserva(){
 function ConsultarRervaPeloHotel(idHotel){
     //Para cada reserva que encontrarmos a função executa o código dentro do bloco {...} chamando cada item de reserva, poderia ser x ou y tambem tanto faz.
     reservas.forEach(reserva => {
-        if(idHotel == hoteis[i].IdHotel){
+        if(idHotel == reserva.IdHotel){
             let i = idHotel -1
             console.log(`Hotel:${hoteis[i].Nome}`) //array de hotel . a propriedade Nome
             console.log(`Responsável: ${reserva.Responsavel}`)

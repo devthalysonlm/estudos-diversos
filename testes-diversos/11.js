@@ -126,14 +126,20 @@ function CadastrarReserva(){
 
 function ProcurarReservaPeloHotel(idHotel){
     reservas.forEach(reserva => {
-        if()
+        if(idHotel == reserva.idHotel){
+            let i = idHotel - 1
+            console.log(`Hotel: ${hoteis[i].nome}`)
+            console.log(`Responsável: ${reserva.responsavel}`)
+            console.log(`Check-in:${reserva.diaEntrada}`)
+            console.log(`Check-out:${reserva.diaSaida}`)
+        }
     })
 }
 
 
 let continuar = true
 while(continuar){
-    let opçoes = parseInt(prompt('Digite 1 para cadastro de hotel ou 2 para cadastro de reservas 3 sair.'))
+    let opçoes = parseInt(prompt('Bem vindo ao Hotel DoDev\nEscolha uma das opções que melhor lhe atender!!\n 1 - Cadastro\n 2 - Cadastro de Reserva\n 3 - Consultar reserva por hotel\n 4 - Sair'))
     switch (opçoes) {
         case 1:
             CadastrarHotel();
@@ -144,6 +150,9 @@ while(continuar){
             console.log(reservas)
             break;
         case 3:
+            ProcurarReservaPeloHotel(parseInt(prompt('Informe o ID do hotel:')))
+            break;
+        case 4:
             continuar = false
             break;
         default:
@@ -152,7 +161,6 @@ while(continuar){
     }
 
 }
-
 
 
 
