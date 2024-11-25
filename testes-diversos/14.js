@@ -49,3 +49,8 @@ function ProcurarHotelPelaCategoria(categoria){
 }
 
 
+function AtualizarTelefone(){
+    hoteis[idHotel -1].telefone = telefone
+    console.log('Numero de telefone atualizado com sucesso!')
+}
+

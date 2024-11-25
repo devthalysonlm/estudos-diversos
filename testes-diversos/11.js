@@ -157,6 +157,11 @@ function ProcurarReservasPeloNome(nome){
     }
 }
 
+function AtualizarTelefone(idHotel, telefone){
+    hoteis[idHotel - 1].telefone = telefone
+    console.log('Número de telefone atualizado com sucesso!')
+}
+
 
 let continuar = true
 while(continuar){
