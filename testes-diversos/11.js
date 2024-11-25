@@ -165,7 +165,7 @@ function AtualizarTelefone(idHotel, telefone){
 
 let continuar = true
 while(continuar){
-    let opçoes = parseInt(prompt('Bem vindo ao Hotel DoDev\nEscolha uma das opções abaixo!!\n 1 - Cadastro de Hotel\n 2 - Cadastro de Reserva\n 3 - Consultar reserva por hotel\n 4 - Consultar hotel por reserva\n 5 - Sair'))
+    let opçoes = parseInt(prompt('Bem vindo ao Hotel DoDev\nEscolha uma das opções abaixo!!\n 1 - Cadastro de Hotel\n 2 - Cadastro de Reserva\n 3 - Consultar reserva por hotel\n 4 - Consultar hotel por reserva\n 5 - Procurar Reserva pelo nome\n 6 - Atualizar número de telefone\n 7 - Sair'))
     switch (opçoes) {
         case 1:
             CadastrarHotel();
@@ -181,6 +181,14 @@ while(continuar){
         case 4:
             ProcurarHotelPelaReserva(parseInt(prompt('Informe o ID da reserva: ')))
         case 5:
+            ProcurarReservasPeloNome(prompt('Informe o nome do responsável:'))
+            break;
+        case 6:
+            let idHotel = prompt('Informe o ID do hotel:')
+            let telefone = prompt('Informe o telefone que deseja atualizar:')
+            AtualizarTelefone(idHotel, telefone)
+            break;
+        case 7:
             continuar = false
             break;
         default:
