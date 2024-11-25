@@ -144,6 +144,18 @@ function ProcurarHotelPelaReserva(idReserva){
     console.log(`Check-out: ${reservas[idReserva - 1].diaSaida}`)
 
 }
+//Criando a função para procurar reservas pelo nome
+function ProcurarReservasPeloNome(nome){
+    //Percorrendo cada elemento do array de reservas utilizando o for
+    for(let i = 0; i < reservas.length; i++){
+        //Se o meu nome for igual ao meus indice encontrado dentro de alguma reserva eu trago o elemento responsável que é o nome do responsável pela reserva.
+        if(nome == reservas[i].responsavel){
+            //trazendo a informação de id de reserva com base no indice correspondente
+            console.log(`ID da reserva: ${reservas[i].id}`)
+            console.log(`Hotel: ${hoteis[(reservas[i].idHotel) - 1].nome}`)
+        }
+    }
+}
 
 
 let continuar = true

@@ -19,3 +19,12 @@ function ConsultarHotelPelaReserva(idReserva){
     console.log(`Dia de entrada: ${reservas[idReserva - 1].diaEntrada}`)
     console.log(`Dia de saída:${reservas[idReserva - 1].diaSaida}`)
 }
+
+function ProcurarReservasPeloNome(nome){
+    for(let i = 0; i >= reservas.length; i++){
+        if(nome == reservas[i].responsvel){
+            console.log(`ID da reserva: ${reservas[i].id}`)
+            console.log(`Hotel:${hoteis[reservas[i].idHotel -1].nome}`)
+        }
+    }
+}
