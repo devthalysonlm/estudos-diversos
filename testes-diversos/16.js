@@ -43,7 +43,29 @@ function ProcurarReservaPeloNome(nome){
         if(nome == reserva[i].responsavel)
             //Eu acesso o id da indice de reservas procurado
             console.log(`ID da reserva: ${reservas[i].id}`)
+            //Próxima linha da uma verificada na resolução
             console.log(`Hotel: ${hoteis[reservas[i].idHotel-1].nome}`)
 
     }
 }
+
+//Criando uma função para procurar o hotel pela categoria
+function ProcurarHotelPelaCategoria(categoria){
+    //Criando um array que vai guardar o nome dos hoteis procurados
+    let hoteisProcurados = []
+    //Percorrendo cada elemento do array de hoteis com for
+    for(let i = 0; i < hoteis.length; i++){
+        //Se a categoria for correspondente ao indice procurador no array de hoteis 
+        if(categoria == hoteis[i].categoria){
+            //Eu puxo o nome do hotel acessando o indice do array de hoteis
+            hoteisProcurados.push(hoteis[i].nome)
+        }
+        //retorno o array de hoteis procurados atualizado.
+        return hoteisProcurados
+    }
+    
+}
+
+
+
+

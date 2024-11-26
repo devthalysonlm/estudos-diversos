@@ -157,6 +157,16 @@ function ProcurarReservasPeloNome(nome){
     }
 }
 
+function ProcurarHotelPelaCategoria(categoria){
+    let hoteisProcurados = []
+    for(let i = 0; i < hoteis.length; i++){
+        if(categoria == hoteis[i].categoria){
+            hoteisProcurados.push(hoteis[i].nome)
+        }
+    }
+    return hoteisProcurados
+}
+
 function AtualizarTelefone(idHotel, telefone){
     hoteis[idHotel - 1].telefone = telefone
     console.log('Número de telefone atualizado com sucesso!')
