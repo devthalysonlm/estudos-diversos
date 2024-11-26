@@ -9,7 +9,7 @@ function consultarReservaPeloHotel(idHotel){
         }
     })
 }
-//Criando a função para cosultar hote pela reserva com parâmetro de id da reserva
+//Criando a função para cosultar hotel pela reserva com parâmetro de id da reserva
 function ConsultarHotelPelaReserva(idReserva){
     
     let idHotel = reservas[idReserva -  1].idHotel
