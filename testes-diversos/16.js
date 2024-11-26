@@ -20,3 +20,30 @@ function ConsultarReservaPeloHotel(IdHotel){
 }
 
 
+//Criando a função consultar hotel pela reserva
+function ConsultarHotelPelaReserva(idReserva){
+ //Atribuindo a variável idHotel o valor da propriedade idHotel do objeto de uma reserva específica  acessado pelo ídeice idReserva -1 no array reservas.   
+ let idHotel = reservas[idReserva - 1].idHotel
+ //Acessando um elemento específico (nome) do array de hotel. O indice do array começa em 0 e o idHotel em 1 por isso devemos subtrair 1 do id
+ console.log(`Hotel:${hoteis[idHotel - 1].nome}`)
+ //Acessando um elemento específico (endereco) do array de hotel. O indice de array começa em 0 e o idHotel em 1 por isso devemos subtrair 1 do id
+ console.log(`Endereço:${hoteis[idHotel - 1].endereco}`)
+ //Nesses dois elementos estamos acessando um elemento específica do array de reservas (diaEntrada, diaSaida) onde devemos igualar o índice onde no array começa em 0 
+ // e no idRserva começa em 1, logo subtraímos 1 do IdReserva.
+ console.log(`Check-in: ${reservas[idReserva - 1].diaEntrada}`)
+ console.log(`Check-out: ${reservas[idReserva -1].diaSaida}`)
+
+}
+
+//Criando a função para procurar a reserva pelo nome
+function ProcurarReservaPeloNome(nome){
+    //Percorrendo cada elemento do array de reservas utilizando a contagem for
+    for(let i = 0; i < reservas.length; i++){
+        //Se por acaso o nome que eu solicitar existir dentro do indicede reservas e for igual ao elemento do propriedade responsável
+        if(nome == reserva[i].responsavel)
+            //Eu acesso o id da indice de reservas procurado
+            console.log(`ID da reserva: ${reservas[i].id}`)
+            console.log(`Hotel: ${hoteis[reservas[i].idHotel-1].nome}`)
+
+    }
+}
