@@ -2,6 +2,20 @@
     Descrevendo o exercício 17 da Dodev por partes:
     1 - Criando a classe de Hoteis
     2 - Criando a classe de reservas
+        /*
+    Hotel: 
+        Id
+        Nome
+        Categoria
+        Endereco
+        Telefone
+    Reserva:
+        Id
+        IdHtotel
+        Responsavel
+        Entrada
+        Saida
+
     3 - Criando o arrays para contagem e armazenamento
     4 - Criando função para cadastrar hotel
     5 - O nome do hotel não pode ser vazio então colococamos o mesmo em uma condição em que o usuário é obrigado a inserir um caracter!
@@ -13,11 +27,11 @@
     11 - Deixamos a variaval idHotel em standBy para ser usada posteriormente.
     12 - Solicitando o id do Hotel
     13 - contagem que vai fazer uma interação com cada elemente do array de hoteis
-    14 - Se por acado a contagem for igual a algum elemeente de ID do array hoteis o hotel existe
+    14 - Se por acaso a contagem for igual a algum elemeente de ID do array hoteis o hotel existe
     15 - Se o Hotel existe a minha contagem para com o break
     16 - Se por acaso a contagem passar a ponto de resultar e um id inexistente como -1 o ID não foi cadastrado
     17 - Segunda parte da função CadastrarReserva
-    18 - Solcita as informações necessário como responsável pela reserva e dia de entrada e deixa o dia de saida como standBy
+    18 - Solicita as informações necessário como responsável pela reserva e dia de entrada e deixa o dia de saida como standBy
     19 - Cria um dowhile em que a condição para sair desse loop é que o dia de entrada não deve ser maior que o dia de saida.
     20 - Cria o objeto da novareserva
     21 - Atribui o id da reserva
