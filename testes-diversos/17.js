@@ -64,9 +64,9 @@
     48 - Se a categoria for correspondente ao indice procurador no array de hoteis
     49 - Eu puxo o nome do hotel acessando o indice do array de hoteis
     50 - Retorno o array de hoteis procurados atualizado.
-    51 - 
-    52 - 
-    53 - 
+    51 - Criando a função de atualizar o telefone do hotel com parâmetros de idHotel e telefone
+    52 - Acessar a propriedade telefone dentro do array de hoteis já subtraindo 1 do idHotel fazendo com oque o mesmo seja igual a telefone que será o novo telefone
+    53 - Colcoar uma mensagem na tela dizendo que o telefone foi atualizado.
     54 - 
     55 - 
     56 - 
