@@ -53,17 +53,17 @@
     37 - Acessamos o idHotel -1 nos hoteis e acessamos a informção nome
     38 - Acessamos o idHotel -1 nos hoteis e acessamos a informção endereco
     39 - Acessamos o idReserva -1 em reservas e acessamos o dia de entrada e o mesmo com o dia de saida
-    40 - 
-    41 - 
-    42 - 
-    43 - 
-    44 - 
-    45 - 
-    46 - 
-    47 - 
-    48 - 
-    49 - 
-    50 - 
+    40 - Criando a função para procurar reservas pelo nome
+    41 - Percorrendo cada elemento do array de reservas utilizando o for
+    42 - Se por acaso o nome que eu solicitar existir dentro do indicede reservas e for igual ao elemento do propriedade responsável
+    43 - Eu acesso o id da indice de reservas procurado
+    44 - Próxima linha da uma verificada na resolução
+    45 - Criando uma função para procurar o hotel pela categoria
+    46 - Criando um array que vai guardar o nome dos hoteis procurados
+    47 - Percorrendo cada elemento do array de hoteis com for
+    48 - Se a categoria for correspondente ao indice procurador no array de hoteis
+    49 - Eu puxo o nome do hotel acessando o indice do array de hoteis
+    50 - Retorno o array de hoteis procurados atualizado.
     51 - 
     52 - 
     53 - 
@@ -74,7 +74,7 @@
     58 - 
     59 - 
     60 - 
-    
+
 
 
 
