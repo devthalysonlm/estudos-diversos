@@ -48,12 +48,33 @@
     32 - Atribuindo a variável idHotel o valor da propriedade idHotel do objeto de uma reserva específica  acessado pelo ídeice idReserva -1 no array reservas. 
     33 - Acessando um elemento específico (nome) do array de hotel. O indice do array começa em 0 e o idHotel em 1 por isso devemos subtrair 1 do id
     34 - Acessando um elemento específico (endereco) do array de hotel. O indice de array começa em 0 e o idHotel em 1 por isso devemos subtrair 1 do id
-    35 - 
-    36 - 
-    37 - 
-    38 - 
-    39 - 
+    35 - Criando a função para procurar o hotel pela reserva
+    36 - criando a variável idHotel no qual nos acessamos as reservas e fazemos com que o idReserva seja -1 para poder acompanhar o array e começar em o e ficar igual a idHotel
+    37 - Acessamos o idHotel -1 nos hoteis e acessamos a informção nome
+    38 - Acessamos o idHotel -1 nos hoteis e acessamos a informção endereco
+    39 - Acessamos o idReserva -1 em reservas e acessamos o dia de entrada e o mesmo com o dia de saida
     40 - 
+    41 - 
+    42 - 
+    43 - 
+    44 - 
+    45 - 
+    46 - 
+    47 - 
+    48 - 
+    49 - 
+    50 - 
+    51 - 
+    52 - 
+    53 - 
+    54 - 
+    55 - 
+    56 - 
+    57 - 
+    58 - 
+    59 - 
+    60 - 
+    
 
 
 
