@@ -1,3 +1,4 @@
+//PRIMEIRA PARTE: CRIAR AS CLASSES DE LIVROS E BIBLIOTECA E CRIARA OBEJTOS DE LIVRO > 20.JS
 class Livro{
     constructor(titulo, autor, editora, anoDePublicacao, disponibilidade = true){
         this.titulo = titulo
@@ -20,6 +21,7 @@ class Biblioteca{
         this.acervoLivros = acervoLivros
     }
 
+    //SEGUNDA PARTE: CRIAR A FUNÇÃO DE PROCURAR LIVROS > 21.JS
     procurarLivro(titulo){
         this.acervoLivros.forEach((livro) => {
             if(livro.titulo === titulo){
@@ -28,6 +30,7 @@ class Biblioteca{
         })
 
     }
+    //TERCEIRA PARTE: CRIAR A FUNÇÃO DE EMPRESTAR OS LIVROS
     emprestarLivro(titulo){
         let emprestar = false
         this.acervoLivros.forEach((livro) => {
@@ -41,7 +44,7 @@ class Biblioteca{
         })
         return emprestar
     }
-    //cria funçao faz um for. each, pegunta de o titulo do livro e igual a livro coloca a disponibilidade como true printar devolver livro
+    //QUARTA PARTE: CRIAR A FUNÇÃO DE DEVOLVER OS LIVROS
     devolverLivro(titulo){
         livros.forEach((livro => {
             if(livro.titulo === titulo){
@@ -53,7 +56,7 @@ class Biblioteca{
 
 }
 
-
+//QUINTA PARTE: CRIAR O OBJETO BIBLIOTECA E TESTAR AS FUNÇÕES
 let biblioteca = new Biblioteca(`Dodev`, `Rua 3000,480`,`33631094`,livros)
 biblioteca.procurarLivro(`Livro2`)
 biblioteca.emprestarLivro(`Livro1`)
