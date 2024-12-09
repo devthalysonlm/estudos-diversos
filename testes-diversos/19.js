@@ -1,4 +1,4 @@
-//PRIMEIRA PARTE: CRIAR AS CLASSES DE LIVROS E BIBLIOTECA E CRIARA OBEJTOS DE LIVRO > 20.JS
+//PRIMEIRA PARTE: CRIAR AS CLASSES DE LIVROS E BIBLIOTECA E CRIAR OBEJTOS DE LIVRO > 20.JS
 class Livro{
     constructor(titulo, autor, editora, anoDePublicacao, disponibilidade = true){
         this.titulo = titulo
@@ -30,7 +30,7 @@ class Biblioteca{
         })
 
     }
-    //TERCEIRA PARTE: CRIAR A FUNÇÃO DE EMPRESTAR OS LIVROS
+    //TERCEIRA PARTE: CRIAR A FUNÇÃO DE EMPRESTAR OS LIVROS > 22.JS
     emprestarLivro(titulo){
         let emprestar = false
         this.acervoLivros.forEach((livro) => {

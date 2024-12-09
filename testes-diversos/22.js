@@ -1,9 +1,8 @@
-//SEGUNDA PARTE: CRIAR A FUNÇÃO DE PROCURAR LIVROS 
-
-class Livro{
+//TERCEIRA PARTE: CRIAR A FUNÇÃO DE EMPRESTAR OS LIVROS
+class Livros{
     constructor(titulo, autor, editora, anoDePublicacao, disponibilidade = true){
         this.titulo = titulo
-        this.autor = autor
+        this. autor = autor
         this.editora = editora
         this.anoDePublicacao = anoDePublicacao
         this.disponibilidade = disponibilidade
@@ -17,7 +16,7 @@ livros.push(new Livros(`Livro3`, `Fulano`, `Editora C`, 2000))
 livros.push(new Livros(`Livro4`, `Ciclano`, `Editora D`, 2010))
 livros.push(new Livros(`Livro5`, `Beutrano`, `Editora E`, 2020))
 
-class Biblioteca{
+class Bibiloteca{
     constructor(nome, endereco, telefone, acervoLivros = []){
         this.nome = nome
         this.endereco = endereco
@@ -25,11 +24,5 @@ class Biblioteca{
         this.acervoLivros = acervoLivros
     }
 
-    BuscarLivro(titulo){
-        this.acervoLivros.forEach((livro) => {
-            if(livro.titulo === titulo){
-                console.log(livro)
-            }
-        })
-    }
+    
 }
