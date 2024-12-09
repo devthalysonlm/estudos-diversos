@@ -1,4 +1,5 @@
-//TERCEIRA PARTE: CRIAR A FUNÇÃO DE EMPRESTAR OS LIVROS
+//QUARTA PARTE: CRIAR A FUNÇÃO DE DEVOLVER OS LIVROS
+
 class Livros{
     constructor(titulo, autor, editora, anoDePublicacao, disponibilidade = true){
         this.titulo = titulo
@@ -25,13 +26,12 @@ class Bibiloteca{
     }
 
     BuscarLivro(titulo){
-        this.acervoLivros.forEach((livro) =>{
+        this.acervoLivros.forEach((livro) => {
             if(livro.titulo === titulo){
                 console.log(livro)
             }
         })
     }
-
     EmprestarLivro(titulo){
         let emprestar = false
         this.acervoLivros.forEach((livro) => {
@@ -44,5 +44,12 @@ class Bibiloteca{
         })
         return emprestar
     }
-    
+    DevolverLivro(titulo){
+        livros.forEach((livro) => {
+            if(livro.titulo === titulo){
+                livro.disponibilidade = true
+                console.log(`Devolvido`)
+            }
+        })
+    }
 }

@@ -44,14 +44,14 @@ class Biblioteca{
         })
         return emprestar
     }
-    //QUARTA PARTE: CRIAR A FUNÇÃO DE DEVOLVER OS LIVROS
+    //QUARTA PARTE: CRIAR A FUNÇÃO DE DEVOLVER OS LIVROS > 23.JS
     devolverLivro(titulo){
-        livros.forEach((livro => {
+        livros.forEach((livro) => {
             if(livro.titulo === titulo){
                 livro.disponibilidade = true
                 console.log(`Livro devolvido!`)
             }
-        }))
+        })
     }
 
 }
