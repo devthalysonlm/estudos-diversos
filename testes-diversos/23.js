@@ -17,7 +17,7 @@ livros.push(new Livros(`Livro3`, `Fulano`, `Editora C`, 2000))
 livros.push(new Livros(`Livro4`, `Ciclano`, `Editora D`, 2010))
 livros.push(new Livros(`Livro5`, `Beutrano`, `Editora E`, 2020))
 
-class Bibiloteca{
+class Biblioteca{
     constructor(nome, endereco, telefone, acervoLivros = []){
         this.nome = nome
         this.endereco = endereco
@@ -45,7 +45,7 @@ class Bibiloteca{
         return emprestar
     }
     DevolverLivro(titulo){
-        livros.forEach((livro) => {
+        this.acervoLivros.forEach((livro) => {
             if(livro.titulo === titulo){
                 livro.disponibilidade = true
                 console.log(`Devolvido`)

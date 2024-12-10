@@ -46,7 +46,7 @@ class Biblioteca{
     }
     //QUARTA PARTE: CRIAR A FUNÇÃO DE DEVOLVER OS LIVROS > 23.JS
     devolverLivro(titulo){
-        livros.forEach((livro) => {
+        this.acervoLivros.forEach((livro) => {
             if(livro.titulo === titulo){
                 livro.disponibilidade = true
                 console.log(`Livro devolvido!`)
@@ -56,7 +56,7 @@ class Biblioteca{
 
 }
 
-//QUINTA PARTE: CRIAR O OBJETO BIBLIOTECA E TESTAR AS FUNÇÕES
+//QUINTA PARTE: CRIAR O OBJETO BIBLIOTECA E TESTAR AS FUNÇÕES > 24.JS
 let biblioteca = new Biblioteca(`Dodev`, `Rua 3000,480`,`33631094`,livros)
 biblioteca.procurarLivro(`Livro2`)
 biblioteca.emprestarLivro(`Livro1`)
