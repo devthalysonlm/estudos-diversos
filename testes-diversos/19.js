@@ -22,7 +22,7 @@ class Biblioteca{
     }
 
     //SEGUNDA PARTE: CRIAR A FUNÇÃO DE PROCURAR LIVROS > 21.JS
-    procurarLivro(titulo){
+    BuscarLivro(titulo){
         this.acervoLivros.forEach((livro) => {
             if(livro.titulo === titulo){
                 console.log(livro)
@@ -31,7 +31,7 @@ class Biblioteca{
 
     }
     //TERCEIRA PARTE: CRIAR A FUNÇÃO DE EMPRESTAR OS LIVROS > 22.JS
-    emprestarLivro(titulo){
+    EmprestarLivro(titulo){
         let emprestar = false
         this.acervoLivros.forEach((livro) => {
             if(livro.titulo === titulo){
@@ -45,7 +45,7 @@ class Biblioteca{
         return emprestar
     }
     //QUARTA PARTE: CRIAR A FUNÇÃO DE DEVOLVER OS LIVROS > 23.JS
-    devolverLivro(titulo){
+    DevolverLivro(titulo){
         this.acervoLivros.forEach((livro) => {
             if(livro.titulo === titulo){
                 livro.disponibilidade = true
@@ -58,6 +58,6 @@ class Biblioteca{
 
 //QUINTA PARTE: CRIAR O OBJETO BIBLIOTECA E TESTAR AS FUNÇÕES > 24.JS
 let biblioteca = new Biblioteca(`Dodev`, `Rua 3000,480`,`33631094`,livros)
-biblioteca.procurarLivro(`Livro2`)
-biblioteca.emprestarLivro(`Livro1`)
-biblioteca.devolverLivro(`Livro1`)
+biblioteca.BuscarLivro(`Livro2`)
+biblioteca.EmprestarLivro(`Livro1`)
+biblioteca.DevolverLivro(`Livro1`)

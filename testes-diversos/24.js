@@ -15,12 +15,49 @@ livros.push(new Livros(`Livro3`, `Fulano`, `Editora C`, 2000))
 livros.push(new Livros(`Livro4`, `Ciclano`, `Editora D`, 2010))
 livros.push(new Livros(`Livro5`, `Beutrano`, `Editora E`, 2020))
 
-class Bibiloteca{
+class Biblioteca{
     constructor(nome, endereco, telefone, acervoLivros = []){
         this.nome = nome
         this.endereco = endereco
         this.telefone = telefone
         this.acervoLivros = acervoLivros
     }
+
+    BuscarLivro(titulo){
+        this.acervoLivros.forEach(livro => {
+            if(livro.titulo === titulo){
+                console.log(livro)
+            }
+        })
+    }
+
+    EmprestarLivro(titulo){
+        let emprestar = false
+        this.acervoLivros.forEach(livro => {
+            if(livro.titulo === titulo){
+                if(livro.disponibilidade === true){
+                    livro.disponibilidade = false
+                    emprestar = true
+                }
+            }
+        })
+        return emprestar
+
+    }
+
+    DevolverLivro(titulo){
+        this.acervoLivros.forEach(livro => {
+            if(livro.titulo === titulo){
+                livro.disponibilidade = true
+                console.log(`Livro devolvido!`)
+            }
+        })
+
+    }
+
 }
 
+let biblioteca = new Biblioteca(`Dodev`, `Rua 3000,480`, `33631094`, livros)
+biblioteca.BuscarLivro(`Livro1`)
+biblioteca.EmprestarLivro(`Livro3`)
+biblioteca.DevolverLivro(`Livro3`)
