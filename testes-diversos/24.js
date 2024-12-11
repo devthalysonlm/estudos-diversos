@@ -1,7 +1,7 @@
 class Livros{
     constructor(titulo, autor, editora, anoDePublicacao, disponibilidade = true){
         this.titulo = titulo
-        this. autor = autor
+        this.autor = autor
         this.editora = editora
         this.anoDePublicacao = anoDePublicacao
         this.disponibilidade = disponibilidade
